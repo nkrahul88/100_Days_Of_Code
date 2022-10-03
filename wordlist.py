@@ -1,0 +1,1 @@
+words = ['watermelon', 'pineapple', 'apple', 'orange', 'banana', 'mango', 'pear','kiwi', 'peach']

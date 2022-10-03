@@ -32,7 +32,8 @@ stages = ['''
  /|   |
       |
       |
-=========''', '''
+=========
+''', '''
   +---+
   |   |
   O   |
@@ -60,12 +61,14 @@ stages = ['''
 
 from dis import dis
 import random
-words = ['watermelon', 'pineapple', 'apple', 'orange', 'banana', 'mango', 'pear','kiwi', 'peach']
+import clear
+# words = ['watermelon', 'pineapple', 'apple', 'orange', 'banana', 'mango', 'pear','kiwi', 'peach']
+from wordlist import words 
 end_of_game = False
 counter = 6
 
 choosen_word = random.choice(words)
-print(choosen_word)
+# print(choosen_word)
 
 word_length = len(choosen_word)
 
@@ -74,7 +77,7 @@ display = []
 for aplha in choosen_word:
     display += '_'
 
-# print(display)
+print(display)
 while not end_of_game:
     guess_letter = input('Guess a letter: ').lower()
     for position in range(word_length):
