@@ -42,4 +42,4 @@ for person in bidders:
   if bidders[person] > highest_bid:
     highest_bid = bidders[person]
     winner = person
-print(f"The highest bid from {winner} for {highest_bid}")
+print(f"The highest bid was from {winner} for ${highest_bid}")
